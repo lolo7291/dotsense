@@ -197,10 +197,10 @@ ui_print("@Kernel installation");
       file_getprop("/tmp/aroma/kernel-hero.prop","selected") == "1"
     then
       ui_print("Installing kernel (H1)...");
-      package_extract_dir("devicesupport/hero/kernels/HerocKernel1", "/tmp");
+      package_extract_dir("devicesupport/hero/kernels/HeroKernel1", "/tmp");
        write_raw_image("/tmp/boot.img", "boot");
        delete("/tmp/boot.img");
-      package_extract_dir("devicesupport/hero/modules/HerocKernel1", "/system/lib/modules");
+      package_extract_dir("devicesupport/hero/modules/HeroKernel1", "/system/lib/modules");
     endif;
 
 #- Liberty
